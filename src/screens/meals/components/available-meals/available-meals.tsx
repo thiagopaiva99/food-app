@@ -16,4 +16,4 @@ const AvailableMeals: React.FC<AvailableMealsProps> = () => {
     )
 }
 
-export default AvailableMeals
+export { AvailableMeals }
