@@ -1,10 +1,11 @@
 import React from 'react'
+import { StyledSummary } from './meals-summary.styles'
 
 type MealsSummaryProps = {}
 
 const MealsSummary: React.FC<MealsSummaryProps> = () => {
     return (
-        <section>
+        <StyledSummary>
             <h2>Delicious Food, Delivered To You</h2>
             <p>
                 Choose your favorite meal from our broad selection of available meals
@@ -14,7 +15,7 @@ const MealsSummary: React.FC<MealsSummaryProps> = () => {
                 All our meals are cooked with high-quality ingredients, just-in-time and
                 of course by experienced chefs!
             </p>
-        </section>
+        </StyledSummary>
     )
 }
 
