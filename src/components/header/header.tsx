@@ -1,4 +1,5 @@
 import React from 'react'
+import { CartButton } from '..'
 
 import BackgroundImage from '../../assets/img/meals.jpg'
 import { MainImage, StyledHeader } from './header.styles'
@@ -10,7 +11,7 @@ const Header: React.FC<HeaderProps> = () => {
         <>
             <StyledHeader>
                 <h1>React Meals</h1>
-                <button>Cart</button>
+                <CartButton />
             </StyledHeader>
             <MainImage>
                 <img src={BackgroundImage} alt="A table full of food!" />

@@ -4,7 +4,7 @@ type CartButtonProps = {}
 
 const CartButton: React.FC<CartButtonProps> = () => {
     return (
-        <h1>card-button</h1>
+        <button>cart</button>
     )
 }
 
