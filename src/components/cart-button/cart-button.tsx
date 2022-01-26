@@ -1,11 +1,11 @@
 import React from 'react'
 
-type CardButtonProps = {}
+type CartButtonProps = {}
 
-const CardButton: React.FC<CardButtonProps> = () => {
+const CartButton: React.FC<CartButtonProps> = () => {
     return (
         <h1>card-button</h1>
     )
 }
 
-export { CardButton }
+export { CartButton }
