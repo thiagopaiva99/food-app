@@ -1,12 +1,30 @@
 import React from 'react'
+import { StyledMealItem, StyledMealItemDescription, StyledMealItemPrice, StyledMealItemTitle } from './meal-item.styles'
 
-type MealItemProps = {
-
+type Meal = {
+    id: string,
+    name: string,
+    description: string,
+    price: number,
 }
 
-const MealItem: React.FC<MealItemProps> = () => {
+type MealItemProps = {
+    meal: Meal
+}
+
+const MealItem: React.FC<MealItemProps> = ({ meal }) => {
+    const formatPrice = (price: number) => `$${price.toFixed(2)}`
     return (
-        <h1>meal item</h1>
+        <StyledMealItem>
+            <div>
+                <StyledMealItemTitle>{meal.name}</StyledMealItemTitle>
+                <StyledMealItemDescription>{meal.description}</StyledMealItemDescription>
+                <StyledMealItemPrice>{formatPrice(meal.price)}</StyledMealItemPrice>
+            </div>
+            <div>
+
+            </div>
+        </StyledMealItem>
     )
 }
 
